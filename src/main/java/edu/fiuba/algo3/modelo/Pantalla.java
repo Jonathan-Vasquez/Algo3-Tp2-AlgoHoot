@@ -10,8 +10,14 @@ public class Pantalla {
 	public ArrayList<Opcion> pedirOpciones(){
 
 	}
-	public void mostrarConsigna(){
+	public void mostrarConsigna(String unaConsigna){
 
+	}
+	public void mostrarOpciones(ArrayList <Opcion> opciones) {
+		
+	}
+	public void mostrarGanador(Jugador unJugador) {
+		
 	}
 
 
