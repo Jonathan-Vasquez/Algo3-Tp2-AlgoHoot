@@ -19,4 +19,10 @@ public class Respuesta {
         return this.remitente;
     }
 
+    public void setRemitente(Jugador jugador){
+        this.remitente = jugador;
+    }
+    public void setOpcionesElegidas(ArrayList<Opcion> opcionesDelJugador){
+        this.opcionesElegidas = opcionesDelJugador;
+    }
 }

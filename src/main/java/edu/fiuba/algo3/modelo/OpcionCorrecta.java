@@ -7,6 +7,9 @@ public class OpcionCorrecta extends Opcion {
         super();
 
     }
+    public OpcionCorrecta(String descripcion){
+        super(descripcion);
+    }
 
     @Override
     public boolean esCorrecta() {

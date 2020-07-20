@@ -11,8 +11,17 @@ public class Jugador {
         this.nombre="";
     }
 
-    public Respuesta generarRespuesta(ArrayList<Opcion> opciones){
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+    public Respuesta generarRespuesta(ArrayList<Opcion> opcionesDelJugador){
         Respuesta respuesta = new Respuesta(); //ver como generarla
+        respuesta.setRemitente(this);
+        respuesta.setOpcionesElegidas(opcionesDelJugador);
         return respuesta;
     }
 }
