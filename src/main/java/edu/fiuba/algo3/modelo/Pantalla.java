@@ -21,6 +21,7 @@ public class Pantalla {
 	public void mostrarGanador(Jugador unJugador) {
 		
 	}
-
+	//Este es un commit autodestructivo
+	//probando si se rompe
 
 }
