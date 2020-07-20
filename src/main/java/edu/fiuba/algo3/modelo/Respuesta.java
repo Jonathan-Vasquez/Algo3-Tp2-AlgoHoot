@@ -2,7 +2,7 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
-public class Respuesta100 {
+public class Respuesta {
     private ArrayList<Opcion> opcionesElegidas;
     private Jugador remitente;
 
