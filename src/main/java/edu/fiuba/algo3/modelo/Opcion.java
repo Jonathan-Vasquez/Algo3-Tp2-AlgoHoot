@@ -1,6 +1,6 @@
 package edu.fiuba.algo3.modelo;
 
-public class Opcion {
+public abstract class Opcion {
     private String opcion;
 
     public Opcion(){
@@ -9,8 +9,7 @@ public class Opcion {
     public String getTexto(){
         return this.opcion;
     }
-    public boolean igualA(Opcion otraOpcion){
-        return this.opcion.equals(otraOpcion.getTexto());
-    }
+    public abstract boolean esCorrecta();
+
 }
 
