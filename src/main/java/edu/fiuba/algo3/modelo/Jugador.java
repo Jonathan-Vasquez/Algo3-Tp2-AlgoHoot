@@ -6,9 +6,9 @@ public class Jugador {
     private int puntaje;
     private String nombre;
 
-    public Jugador(){
-        this.puntaje=0;
-        this.nombre="";
+    public Jugador(String nombre){
+        this.puntaje = 0;
+        this.nombre = nombre;
     }
 
     public void setNombre(String nombre){
@@ -18,11 +18,13 @@ public class Jugador {
     public String getNombre(){
         return this.nombre;
     }
+
     public Respuesta generarRespuesta(ArrayList<Opcion> opcionesDelJugador){
-        Respuesta respuesta = new Respuesta(); //ver como generarla
-        respuesta.setRemitente(this);
-        respuesta.setOpcionesElegidas(opcionesDelJugador);
-        return respuesta;
+        Respuesta unaRespuesta = new Respuesta(opcionesDelJugador,this);
+        return unaRespuesta;
+    }
+    public void acumularPuntaje(int unPuntaje){
+        this.puntaje += unPuntaje;
     }
 }
 

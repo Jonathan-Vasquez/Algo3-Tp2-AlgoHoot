@@ -6,9 +6,9 @@ public class Respuesta {
     private ArrayList<Opcion> opcionesElegidas;
     private Jugador remitente;
 
-    public Respuesta(){
-        this.opcionesElegidas = new ArrayList<>();
-        this.remitente = new Jugador();
+    public Respuesta(ArrayList<Opcion> opcionesElegidas, Jugador remitente) {
+        this.opcionesElegidas = opcionesElegidas;
+        this.remitente = remitente;
     }
 
     public ArrayList<Opcion> getOpcionesElegidas(){
@@ -22,6 +22,7 @@ public class Respuesta {
     public void setRemitente(Jugador jugador){
         this.remitente = jugador;
     }
+
     public void setOpcionesElegidas(ArrayList<Opcion> opcionesDelJugador){
         this.opcionesElegidas = opcionesDelJugador;
     }
