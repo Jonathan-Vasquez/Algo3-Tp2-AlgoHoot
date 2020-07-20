@@ -1,7 +1,7 @@
 
 package edu.fiuba.algo3.modelo;
 
-import java.util.ArrayList;
+import java.util.ArrayList; //AlgaHoot
 
 public class AlgoHoot {
     private ArrayList<Jugador> jugadores;
