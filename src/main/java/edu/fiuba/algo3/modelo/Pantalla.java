@@ -1,7 +1,18 @@
 package edu.fiuba.algo3.modelo;
 
+import java.util.ArrayList;
+
 public class Pantalla {
-	//Esta es una clse pantalla, haria cositas.. si supiera usar java
-	//segundo commit por si no funciono el anterior
-	//Este es otro cambio
+	private Graficador ungraficador;
+	public String pedirNombreJugador(){
+
+	}
+	public ArrayList<Opcion> pedirOpciones(){
+
+	}
+	public void mostrarConsigna(){
+
+	}
+
+
 }
