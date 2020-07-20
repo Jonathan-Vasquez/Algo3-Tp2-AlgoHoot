@@ -3,7 +3,7 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
-/*public class AlgoHoot {
+public class AlgoHoot {
     private ArrayList<Jugador> jugadores;
     private ArrayList<Pregunta> preguntas;
 
@@ -20,4 +20,3 @@ import java.util.ArrayList;
     }
 
 }
-*/
