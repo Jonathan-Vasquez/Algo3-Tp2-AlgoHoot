@@ -6,7 +6,7 @@ public class Jugador {
 
     public Jugador(){
         this.puntaje=0;
-        this.nombre='jugador1';
+        this.nombre="";
 
     }
 
