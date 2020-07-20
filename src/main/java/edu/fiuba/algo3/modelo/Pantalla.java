@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class Pantalla {
 	private Graficador ungraficador;
 	public String pedirNombreJugador(){
-
+		return "pepe";
 	}
 	public ArrayList<Opcion> pedirOpciones(){
+		ArrayList<Opcion> opciones= new ArrayList<Opcion>();
+		return opciones;
 
 	}
 	public void mostrarConsigna(String unaConsigna){
