@@ -22,5 +22,6 @@ public class Pantalla {
 		
 	}
 	//Este es un commit autodestructivo
+	//probando si se rompe
 
 }
