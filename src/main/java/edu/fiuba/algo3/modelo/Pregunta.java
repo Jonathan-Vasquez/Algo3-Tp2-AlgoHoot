@@ -15,9 +15,21 @@ public abstract class Pregunta {
         return this.consigna;
     }
 
+    public void agregarOpcion(Opcion unaOpcion){
+        this.opciones.add(unaOpcion);
+    }
     public ArrayList<Opcion> getOpciones(){
         return this.opciones;
     }
 
-    public abstract void asignarPuntos(ArrayList<Respuesta> respuestasJugadores);
+
+    public void asignarPuntos(ArrayList<Respuesta> respuestas){
+        for (Respuesta unaRespuesta: respuestas ) {
+            int unPuntaje = calcularPuntaje(unaRespuesta);
+            Jugador unJugador = unaRespuesta.getRemitente();
+            unJugador.acumularPuntaje(unPuntaje);
+        }
+    }
+
+    protected abstract int calcularPuntaje(Respuesta unaRespuesta);
 }

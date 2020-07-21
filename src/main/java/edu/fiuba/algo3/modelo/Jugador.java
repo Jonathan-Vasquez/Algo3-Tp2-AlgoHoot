@@ -26,5 +26,9 @@ public class Jugador {
     public void acumularPuntaje(int unPuntaje){
         this.puntaje += unPuntaje;
     }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
 }
 
