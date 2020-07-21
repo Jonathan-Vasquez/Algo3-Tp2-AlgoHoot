@@ -16,7 +16,7 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 * **Samuel Camacho 4** - [integrante4](https://github.com/ElBrujas)
 * **Mateo Ausqui 5** - [integrante4](https://github.com/Mat-JA)
 
-Corrector: **{Corrector}**
+Corrector: **{Edson Justo}**
 
 ### Pre-requisitos
 
