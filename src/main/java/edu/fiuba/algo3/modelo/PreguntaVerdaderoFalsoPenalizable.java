@@ -16,6 +16,7 @@ public class PreguntaVerdaderoFalsoPenalizable extends Pregunta{
             if(unaOpcion.esCorrecta())
                 retorno += 1;
             else
+                //lanzar expcecion puntaje=0 return retorno""
                 retorno -= 1;
         }
         return retorno;
