@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PreguntaVerdaderoFalsoPenalizableTest {
+/*public class PreguntaVerdaderoFalsoPenalizableTest {
 
     @Test
     public void test01SeLeEnviaUnaRespuestaConUnaOpcionCorrectaAUnaPreguntaVerdaderFalsoPenalizableYesteDevuelveUnPuntoAlJugadorRemitente(){
@@ -50,3 +50,4 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         assertEquals(-1,unJugador.getPuntaje());
     }
 }
+*/
