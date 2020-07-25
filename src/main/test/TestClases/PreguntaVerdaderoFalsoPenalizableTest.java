@@ -16,14 +16,15 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         Jugador unJugador = new Jugador("Jet");
         ArrayList<Opcion> opcionesSeleccionas = new ArrayList();
         opcionesSeleccionas.add(opcionCorrecta);
-
-        Respuesta unaRespuesta = new Respuesta(opcionesSeleccionas,unJugador);
-        ArrayList <Respuesta> respuestaJugadores = new ArrayList<>();
-        respuestaJugadores.add(unaRespuesta);
-
-        Pregunta unaPregunta = new PreguntaVerdaderoFalsoPenalizable("¿mearChorro?");
+        Pregunta unaPregunta = new PreguntaVerdaderoFalsoPenalizable("¿Estudias en la facultad?");
         unaPregunta.agregarOpcion(opcionCorrecta);
         unaPregunta.agregarOpcion(opcionIncorrecta);
+        Ronda ronda= new Ronda(unaPregunta);
+
+
+
+
+
         unaPregunta.asignarPuntos(respuestaJugadores);
 
         assertEquals(1,unJugador.getPuntaje());

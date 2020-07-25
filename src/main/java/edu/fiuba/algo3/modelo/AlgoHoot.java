@@ -6,6 +6,7 @@ import java.util.ArrayList; //AlgaHoot
 public class AlgoHoot {
     private ArrayList<Jugador> jugadores;
     private ArrayList<Pregunta> preguntas;
+    private ArrayList<Ronda> rondas;
 
     public AlgoHoot(){
         this.jugadores=new ArrayList<Jugador>();

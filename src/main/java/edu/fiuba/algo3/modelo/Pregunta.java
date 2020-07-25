@@ -2,9 +2,10 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
-public abstract class Pregunta {
+public class Pregunta {
     private String consigna;
     private ArrayList<Opcion> opciones;
+    private TipoPregunta unTipoDePregunta;
 
     public Pregunta(String consigna) {
         this.consigna = consigna;
@@ -23,13 +24,11 @@ public abstract class Pregunta {
     }
 
 
-    public void asignarPuntos(ArrayList<Respuesta> respuestas){
-        for (Respuesta unaRespuesta: respuestas ) {
-            int unPuntaje = calcularPuntaje(unaRespuesta);
-            Jugador unJugador = unaRespuesta.getRemitente();
-            unJugador.acumularPuntaje(unPuntaje);
-        }
+    public int obtenerPuntajeOpcionesElejidas(ArrayList<Opcion> opciones){
+        int puntajeTotal=0;
+        unTipoDePregunta.calcularPuntaje(opciones);
+
+        return puntajeTotal;
     }
 
-    protected abstract int calcularPuntaje(Respuesta unaRespuesta);
 }

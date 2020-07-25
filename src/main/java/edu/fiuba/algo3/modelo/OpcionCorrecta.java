@@ -7,7 +7,8 @@ public class OpcionCorrecta extends Opcion {
     }
 
     @Override
-    public boolean esCorrecta() {
-        return true;
+    public  int devolverPuntaje(){
+        return 1;
     }
+
 }

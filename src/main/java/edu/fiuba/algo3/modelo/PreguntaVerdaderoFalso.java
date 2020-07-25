@@ -2,19 +2,15 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
-public class PreguntaVerdaderoFalso extends Pregunta{
-    public PreguntaVerdaderoFalso(String consigna) {
-        super(consigna);
+public class PreguntaVerdaderoFalso implements TipoPregunta{
+    @Override
+    public int calcularPuntaje(ArrayList<Opcion> opciones){
+        int puntaje = 0;
+       for(Opcion opcion: opciones){
+           puntaje+=opcion.devolverPuntaje();
+       }
+       return puntaje;
     }
 
 
-    protected int calcularPuntaje(Respuesta unaRespuesta){
-        int retorno = 0;
-        ArrayList <Opcion> opcionesElejidas = unaRespuesta.getOpcionesElegidas();
-        for (Opcion unaOpcion: opcionesElejidas ) {
-            if(unaOpcion.esCorrecta())
-                retorno += 1;
-        }
-        return retorno;
-    }
 }

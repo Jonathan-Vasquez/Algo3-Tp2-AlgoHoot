@@ -11,7 +11,6 @@ public abstract class Opcion {
         return this.descripcion;
     }
 
-    public abstract boolean esCorrecta();
-
+    public abstract int devolverPuntaje();
 }
 
