@@ -16,8 +16,26 @@ public class Entrega0Test {
         assertEquals(true,true);
     }
     @Test
-    public void unaPreguntaDeVerdaderoFalsoClasicoRecibeUnaListaDeRespuestasYAsignaCorrectamentePuntosALosJugadoresQueRespondieronCorrectamente(){
+    public void unaPreguntaDeVerdaderoFalsoClasicoSePuedeCrearPasandoleLaRespuestaCorrecta(){
+
+        Opcion opcionCorrecta = new Opcion("se");
+        Opcion opcionIncorrecta = new Opcion("no se");
+
+        ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+
+        ArrayList<Opcion> opcionesAMostrar = new ArrayList<>();
+        opcionesAMostrar.add(opcionCorrecta);
+        opcionesAMostrar.add(opcionIncorrecta);
+
+        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesCorrectas, opcionesAMostrar);
+        TipoPregunta tipoPreguntaVerdaderoFalsoClasico = new PreguntaVerdaderoFalso();
+
+        Pregunta preguntaVerdaderoFalsoClasico = new Pregunta("sape o no sape?",tipoPreguntaVerdaderoFalsoClasico, listaDeOpciones);
+
+
         /*
+
         Opcion opcionCorrecta = new OpcionCorrecta("soy inimputable");
         Opcion opcionIncorrecta = new OpcionIncorrecta("opcion falsa");
 

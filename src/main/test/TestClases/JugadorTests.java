@@ -23,10 +23,6 @@ public class JugadorTests {
         assertEquals(unJugador.getNombre(),"Wardruna");
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 543bbf2d6ad6c8d808883a06e0b427a23e96c40f
     @Test
     public void Test04getPuntaje() {
         Jugador unJugador = new Jugador("IlCapitaniJackSpaguetti");
