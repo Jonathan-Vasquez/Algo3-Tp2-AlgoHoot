@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PreguntaVerdaderoFalsoPenalizableTest {
 
-    /*@Test
+    @Test
     public void test01SeLeEnviaUnaRespuestaConUnaOpcionCorrectaAUnaPreguntaVerdaderFalsoPenalizableYesteDevuelveUnPuntoAlJugadorRemitente(){
         Opcion opcionCorrecta = new OpcionCorrecta("soy inimputable");
         Opcion opcionIncorrecta = new OpcionIncorrecta("opcion falsa");
@@ -48,5 +48,5 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         unaPregunta.asignarPuntos(respuestaJugadores);
 
         assertEquals(-1,unJugador.getPuntaje());
-    }*/
+    }
 }
