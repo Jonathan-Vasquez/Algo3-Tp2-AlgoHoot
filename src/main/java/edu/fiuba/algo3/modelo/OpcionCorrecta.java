@@ -10,5 +10,4 @@ public class OpcionCorrecta extends Opcion {
     public  int devolverPuntaje(){
         return 1;
     }
-
 }

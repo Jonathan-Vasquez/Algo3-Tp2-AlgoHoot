@@ -8,7 +8,7 @@ public class OpcionIncorrecta extends Opcion {
 
     @Override
     public  int devolverPuntaje(){
-            return 0;
+        return 0;
     }
 
 }

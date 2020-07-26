@@ -10,7 +10,6 @@ public abstract class Opcion {
     public String getTexto(){
         return this.descripcion;
     }
-
     public abstract int devolverPuntaje();
 }
 

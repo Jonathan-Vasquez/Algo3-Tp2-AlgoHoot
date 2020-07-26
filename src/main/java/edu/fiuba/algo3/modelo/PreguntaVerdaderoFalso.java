@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class PreguntaVerdaderoFalso implements TipoPregunta{
     @Override
     public int calcularPuntaje(ArrayList<Opcion> opciones){
-        int puntaje = 0;
-       for(Opcion opcion: opciones){
-           puntaje+=opcion.devolverPuntaje();
-       }
-       return puntaje;
+        int retorno = 0;
+        if(!opciones.isEmpty()){
+            for(Opcion opcion: opciones){
+                retorno += opcion.devolverPuntaje();
+            }
+        }
+        return retorno;
     }
 
 

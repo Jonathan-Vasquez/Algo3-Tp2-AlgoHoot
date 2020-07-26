@@ -14,8 +14,6 @@ public class Pantalla {
 		ArrayList<Opcion> opciones= new ArrayList<>();
 		return opciones;
 	}
-
-
 	public void mostrarConsigna(String unaConsigna){
 
 	}
