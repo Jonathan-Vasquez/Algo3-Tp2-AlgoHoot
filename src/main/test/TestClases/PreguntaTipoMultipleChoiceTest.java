@@ -83,7 +83,6 @@ public class PreguntaTipoMultipleChoiceTest {
         opcionesApresentar.add(opcionCorrectaTres);
         opcionesApresentar.add(opcionIncorrecta);
 
-
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrectaUno);
         opcionesCorrectas.add(opcionCorrectaDos);

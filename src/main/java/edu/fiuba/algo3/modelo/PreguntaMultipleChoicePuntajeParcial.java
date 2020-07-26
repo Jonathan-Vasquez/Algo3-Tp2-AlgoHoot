@@ -1,4 +1,4 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo;        //jugador1 responde bien (elige todas las correctas)
 
 import java.util.ArrayList;
 
