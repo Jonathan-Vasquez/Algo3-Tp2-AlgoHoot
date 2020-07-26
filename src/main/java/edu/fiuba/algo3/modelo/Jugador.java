@@ -19,11 +19,6 @@ public class Jugador {
         return this.nombre;
     }
 
-    public Respuesta generarRespuesta(ArrayList<Opcion> opcionesDelJugador){
-        Respuesta unaRespuesta = new Respuesta(opcionesDelJugador,this);
-        return unaRespuesta;
-    }
-
     public void acumularPuntaje(int unPuntaje){
         this.puntaje += unPuntaje;
     }
