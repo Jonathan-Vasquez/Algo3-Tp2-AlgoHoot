@@ -9,8 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PreguntaVerdaderoFalsoPenalizableTest {
     @Test
     public void test01SeLeEnviaUnaOpcionCorrectaYDevuelveUnPunto(){
-        Pregunta unaPregunta = new Pregunta("¿mearChorro?",new PreguntaVerdaderoFalsoPenalizable());
-        Opcion opcionCorrecta = new OpcionCorrecta("soy inimputable");
+        Opcion opcionCorrecta = new Opcion("Seeee");
+        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), opcionesCorrectas);
+
+
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrecta);
 
@@ -18,9 +22,14 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
     }
 
     @Test
-    public void test02SeLeEnviaUnaOpcionIncorrectaYDevuelveMenosUno(){
-        Pregunta unaPregunta = new Pregunta("¿mearChorro?",new PreguntaVerdaderoFalsoPenalizable());
-        Opcion opcionIncorrecta = new OpcionIncorrecta("soy inimputable");
+    public void test02SeLeEnviaUnaOpcionCorrectaYDevuelveMenosUnPuntos(){
+        Opcion opcionCorrecta = new Opcion("Seeee");
+        Opcion opcionIncorrecta = new Opcion("Nop");
+        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalsoPenalizable(), opcionesCorrectas);
+
+
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionIncorrecta);
 

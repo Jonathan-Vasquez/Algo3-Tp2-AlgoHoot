@@ -11,9 +11,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PreguntaTipoVerdaderoFalsoTest {
     @Test
     public void test01SeLeEnviaUnaOpcionCorrectaYDevuelveUnPunto(){
-        Pregunta unaPregunta = new Pregunta("¿mearChorro?",new PreguntaVerdaderoFalso());
+        Opcion opcionCorrecta = new Opcion("Seeee");
+        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), opcionesCorrectas);
 
-        Opcion opcionCorrecta = new OpcionCorrecta("soy inimputable");
+
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrecta);
 
@@ -21,9 +24,13 @@ public class PreguntaTipoVerdaderoFalsoTest {
     }
 
     @Test
-    public void test02SeLeEnviaUnaOpcionIncorrectaYDevuelveCero(){
-        Pregunta unaPregunta = new Pregunta("¿mearChorro?",new PreguntaVerdaderoFalso());
-        Opcion opcionIncorrecta = new OpcionIncorrecta("soy inimputable");
+    public void test02SeLeEnviaUnaOpcionCorrectaYDevuelveCeroPuntos(){
+        Opcion opcionCorrecta = new Opcion("Seeee");
+        Opcion opcionIncorrecta = new Opcion("Nop");
+        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), opcionesCorrectas);
+
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionIncorrecta);
 

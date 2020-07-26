@@ -27,8 +27,8 @@ public class JugadorTests {
     public void Test03generarRespuesta() {
         Jugador unJugador = new Jugador ("Electaurus");
 
-        Opcion unaOpcion = new OpcionCorrecta("Hemos de arremeter al alba.");
-        Opcion otraOpcion = new OpcionIncorrecta("Cargaremos a la media mañana");
+        Opcion unaOpcion = new Opcion("Hemos de arremeter al alba.");
+        Opcion otraOpcion = new Opcion("Cargaremos a la media mañana");
 
         ArrayList<Opcion> opciones = new ArrayList();
         opciones.add(unaOpcion);

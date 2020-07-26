@@ -4,16 +4,14 @@ import java.util.ArrayList;
 
 public class PreguntaVerdaderoFalsoPenalizable implements TipoPregunta{
     @Override
-    public int calcularPuntaje(ArrayList<Opcion> opciones){
+    public int calcularPuntaje(ArrayList<Opcion> opcionesJugador, ArrayList<Opcion> opcionesCorrectas){
         int retorno = 0;
-        if(!opciones.isEmpty()){
-            for(Opcion opcion: opciones){
-                if(opcion.esCorrecta())
-                    retorno ++;
-                else
-                    retorno --;
-            }
-        }
+        Opcion respuestaJugador = opcionesJugador.get(0);
+        if(opcionesCorrectas.contains(respuestaJugador))
+            retorno ++;
+        else
+            retorno --;
+
         return retorno;
     }
 
