@@ -23,23 +23,7 @@ public class JugadorTests {
         assertEquals(unJugador.getNombre(),"Wardruna");
     }
 
-    @Test
-    public void Test03generarRespuesta() {
-        Jugador unJugador = new Jugador ("Electaurus");
 
-        Opcion unaOpcion = new Opcion("Hemos de arremeter al alba.");
-        Opcion otraOpcion = new Opcion("Cargaremos a la media mañana");
-
-        ArrayList<Opcion> opciones = new ArrayList();
-        opciones.add(unaOpcion);
-        opciones.add(otraOpcion);
-
-        Respuesta respuestasUnJugador = unJugador.generarRespuesta(opciones);
-        assertEquals(respuestasUnJugador.getRemitente().getNombre(),unJugador.getNombre());
-        for (int i = 0; i < opciones.size(); i++) {
-            assertEquals(respuestasUnJugador.getOpcionesElegidas().get(i).getTexto(),opciones.get(i).getTexto());
-        }
-    }
     @Test
     public void Test04getPuntaje() {
         Jugador unJugador = new Jugador("IlCapitaniJackSpaguetti");

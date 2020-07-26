@@ -18,7 +18,9 @@ public class Pregunta {
         return this.consigna;
     }
 
-    public int obtenerPuntajeOpcionesElejidas(ArrayList<Opcion> opciones){
-        return unTipoPregunta.calcularPuntaje(opciones,listaOpciones.getOpcionesCorrectas());
+    public int obtenerPuntajeOpcionesElejidas(ArrayList<Opcion> opcionesDeUnJugador){
+        if(opcionesDeUnJugador.isEmpty())
+            return 0;
+        return unTipoPregunta.calcularPuntaje(opcionesDeUnJugador,listaOpciones.getOpcionesCorrectas());
     }
 }
