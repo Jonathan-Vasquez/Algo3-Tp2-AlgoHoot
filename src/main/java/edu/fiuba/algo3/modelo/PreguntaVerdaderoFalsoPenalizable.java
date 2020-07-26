@@ -8,7 +8,10 @@ public class PreguntaVerdaderoFalsoPenalizable implements TipoPregunta{
         int retorno = 0;
         if(!opciones.isEmpty()){
             for(Opcion opcion: opciones){
-                retorno += opcion.devolverPuntaje();
+                if(opcion.esCorrecta())
+                    retorno ++;
+                else
+                    retorno --;
             }
         }
         return retorno;

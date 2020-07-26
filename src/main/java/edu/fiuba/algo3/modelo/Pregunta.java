@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Pregunta {
     private String consigna;
+    private ArrayList<Opcion> opcionesDeLaPregunta;
 
     private TipoPregunta unTipoPregunta;
 
@@ -18,6 +19,9 @@ public class Pregunta {
 
     public int obtenerPuntajeOpcionesElejidas(ArrayList<Opcion> opciones){
         return unTipoPregunta.calcularPuntaje(opciones);
+    }
+    public void agregarOpcion(Opcion unaOpcion){
+        opcionesDeLaPregunta.add(unaOpcion);
     }
 
 }

@@ -8,11 +8,10 @@ public class PreguntaVerdaderoFalso implements TipoPregunta{
         int retorno = 0;
         if(!opciones.isEmpty()){
             for(Opcion opcion: opciones){
-                retorno += opcion.devolverPuntaje();
+                if(opcion.esCorrecta())
+                   retorno ++;
             }
         }
         return retorno;
     }
-
-
 }

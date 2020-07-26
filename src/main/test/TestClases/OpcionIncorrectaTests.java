@@ -11,7 +11,6 @@ public class OpcionIncorrectaTests {
     public void test01getTexto() {
 
         Opcion unaOpcion = new OpcionIncorrecta("Cuatro cardos valen doce doblones");
-
         assertEquals("Cuatro cardos valen doce doblones",unaOpcion.getTexto());
 
     }
@@ -19,8 +18,7 @@ public class OpcionIncorrectaTests {
     public void test02devolverPuntaje() {
 
         Opcion unaOpcion = new OpcionIncorrecta("Un sabio oriental camina apresuradamente por la orilla del Tiber");
-
-        assertEquals(0, unaOpcion.devolverPuntaje());
+        assertEquals(false, unaOpcion.esCorrecta());
 
     }
 

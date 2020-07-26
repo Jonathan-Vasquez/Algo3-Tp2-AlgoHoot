@@ -5,20 +5,19 @@ import java.util.ArrayList;
 
 public class Ronda {
     private Pregunta unaPregunta;
-    private ArrayList<Opcion> opcionesDeLaPregunta;
-    private ArrayList<Turno> turnos;
+    private ArrayList<Turno> turnosJugadores;
 
-
-    public Ronda(Pregunta unaPregunta, ArrayList<Opcion> opcionesDeLaPregunta){
+    public Ronda(Pregunta unaPregunta){
         this.unaPregunta=unaPregunta;
-        this.opcionesDeLaPregunta = opcionesDeLaPregunta;
+        this.turnosJugadores = new ArrayList<>();
     }
 
     public Pregunta obtenerPreguntaActual(){
         return this.unaPregunta;
     }
-    public void asignarPuntajeJugadores(ArrayList<Turno> turnos){
-        for(Turno unTurno: turnos){
+
+    public void asignarPuntajeJugadores(){
+        for(Turno unTurno: this.turnosJugadores){
             ArrayList<Opcion> opcionesJugador = unTurno.getOpcionesJugador();
             int unPuntaje = this.unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesJugador);
             unTurno.asignarPuntajeJugador(unPuntaje);
