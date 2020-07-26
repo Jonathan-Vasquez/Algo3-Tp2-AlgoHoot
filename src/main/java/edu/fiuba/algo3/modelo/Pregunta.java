@@ -5,14 +5,13 @@ import java.util.List;
 
 public class Pregunta {
     private String consigna;
-    private ArrayList<Opcion> opcionesDeLaPregunta;
-    private ArrayList<Opcion> opcionesCorrectas;
+    private ListaOpciones listaOpciones ;
     private TipoPregunta unTipoPregunta;
 
-    public Pregunta(String consigna , TipoPregunta unTipoPregunta, ArrayList<Opcion> opcionesCorrectas) {
+    public Pregunta(String consigna , TipoPregunta unTipoPregunta, ListaOpciones lista) {
         this.consigna = consigna;
         this.unTipoPregunta = unTipoPregunta;
-        this.opcionesCorrectas = opcionesCorrectas;
+        this.listaOpciones = lista;
     }
 
     public String getConsigna(){
@@ -20,10 +19,6 @@ public class Pregunta {
     }
 
     public int obtenerPuntajeOpcionesElejidas(ArrayList<Opcion> opciones){
-        return unTipoPregunta.calcularPuntaje(opciones,opcionesCorrectas);
+        return unTipoPregunta.calcularPuntaje(opciones,listaOpciones.getOpcionesCorrectas());
     }
-    public void agregarOpcion(Opcion unaOpcion){
-        opcionesDeLaPregunta.add(unaOpcion);
-    }
-
 }

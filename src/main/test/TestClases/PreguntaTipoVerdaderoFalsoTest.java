@@ -11,10 +11,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PreguntaTipoVerdaderoFalsoTest {
     @Test
     public void test01SeLeEnviaUnaOpcionCorrectaYDevuelveUnPunto(){
+        Opcion opcionIncorrecta = new Opcion("Nop");
         Opcion opcionCorrecta = new Opcion("Seeee");
+
+        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
+        opcionesApresentar.add(opcionCorrecta);
+        opcionesApresentar.add(opcionIncorrecta);
+
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), opcionesCorrectas);
+
+        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
 
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
@@ -24,12 +32,20 @@ public class PreguntaTipoVerdaderoFalsoTest {
     }
 
     @Test
-    public void test02SeLeEnviaUnaOpcionCorrectaYDevuelveCeroPuntos(){
-        Opcion opcionCorrecta = new Opcion("Seeee");
+    public void test02SeLeEnviaUnaOpcionIncorrectaYDevuelveCeroPuntos(){
         Opcion opcionIncorrecta = new Opcion("Nop");
+        Opcion opcionCorrecta = new Opcion("Seeee");
+
+        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
+        opcionesApresentar.add(opcionCorrecta);
+        opcionesApresentar.add(opcionIncorrecta);
+
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), opcionesCorrectas);
+
+        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionIncorrecta);
