@@ -11,9 +11,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Entrega0Test {
     @Test
     public void unaPreguntaDeVerdaderoFalsoClasicoPuedeCrearseIndicándoleCualEsLaRespuestaCorrecta(){
+        TipoPregunta preguntaVerdaderoFalso = new PreguntaVerdaderoFalso();
+        Opcion opcionCorrecta = new Opcion("si");
+        Opcion opcionIncorrecta = new Opcion("no");
+        ArrayList<Opcion> opcionesAMostrar = new ArrayList<>();
+        opcionesAMostrar.add(opcionCorrecta);
+        opcionesAMostrar.add(opcionIncorrecta);
 
+        ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
 
-        assertEquals(true,true);
+        Pregunta unaPregunta = new Pregunta("se debe hacer test?",preguntaVerdaderoFalso, listaDeOpciones );
+        assertEquals(true, unaPregunta.getOpcionesCorrectas().contains(opcionCorrecta));
     }
     @Test
     public void unaPreguntaDeVerdaderoFalsoClasicoSePuedeCrearPasandoleLaRespuestaCorrecta(){

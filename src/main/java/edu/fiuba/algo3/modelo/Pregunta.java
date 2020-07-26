@@ -23,4 +23,7 @@ public class Pregunta {
             return 0;
         return unTipoPregunta.calcularPuntaje(opcionesDeUnJugador,listaOpciones.getOpcionesCorrectas());
     }
+    public ArrayList<Opcion> getOpcionesCorrectas(){
+        return this.listaOpciones.getOpcionesCorrectas();
+    }
 }
