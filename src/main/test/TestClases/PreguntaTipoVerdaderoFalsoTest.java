@@ -55,6 +55,26 @@ public class PreguntaTipoVerdaderoFalsoTest {
 
         assertEquals(0,unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesDeUnJugador));
     }
+    @Test
+    public void test03jugadorNoEligeOpciones() {
 
+        Opcion opcionIncorrecta = new Opcion("Nop");
+        Opcion opcionCorrecta = new Opcion("Seeee");
+
+        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
+        opcionesApresentar.add(opcionCorrecta);
+        opcionesApresentar.add(opcionIncorrecta);
+
+        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
+        opcionesCorrectas.add(opcionCorrecta);
+
+        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+
+        ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
+
+        assertEquals(0,unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesDeUnJugador));
+
+    }
 
 }
