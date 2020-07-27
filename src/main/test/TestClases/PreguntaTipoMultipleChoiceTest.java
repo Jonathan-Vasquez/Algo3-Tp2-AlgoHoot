@@ -28,9 +28,9 @@ public class PreguntaTipoMultipleChoiceTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrectaUno);
@@ -58,9 +58,9 @@ public class PreguntaTipoMultipleChoiceTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrectaUno);
@@ -88,9 +88,9 @@ public class PreguntaTipoMultipleChoiceTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrectaUno);
@@ -120,9 +120,9 @@ public class PreguntaTipoMultipleChoiceTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
 

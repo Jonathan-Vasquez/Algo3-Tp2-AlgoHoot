@@ -20,8 +20,8 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrecta);
@@ -41,8 +41,8 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalsoPenalizable(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalsoPenalizable(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionIncorrecta);
@@ -62,8 +62,8 @@ public class PreguntaVerdaderoFalsoPenalizableTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
 

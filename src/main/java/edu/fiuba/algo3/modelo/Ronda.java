@@ -1,6 +1,5 @@
 package edu.fiuba.algo3.modelo;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Ronda {
@@ -14,6 +13,9 @@ public class Ronda {
 
     public Pregunta obtenerPreguntaActual(){
         return this.unaPregunta;
+    }
+    public void agregarTurno(Turno unTurno){
+        this.turnosJugadores.add(unTurno);
     }
 
     public void asignarPuntajeJugadores(){

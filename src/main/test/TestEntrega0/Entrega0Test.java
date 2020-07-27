@@ -22,7 +22,7 @@ public class Entrega0Test {
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaVerdaderoFalso = new PreguntaVerdaderoFalso();
         Pregunta unaPregunta = new Pregunta("se debe hacer test?",tipoPreguntaVerdaderoFalso, listaDeOpciones );
@@ -41,7 +41,7 @@ public class Entrega0Test {
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaVerdaderoFalso = new PreguntaVerdaderoFalso();
         Pregunta unaPregunta = new Pregunta("se debe testear?",tipoPreguntaVerdaderoFalso, listaDeOpciones);

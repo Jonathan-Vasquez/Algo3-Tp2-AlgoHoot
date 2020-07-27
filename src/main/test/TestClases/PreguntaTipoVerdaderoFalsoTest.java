@@ -1,6 +1,6 @@
 package TestClases;
 
-import edu.fiuba.algo3.modelo.ListaOpciones;
+import edu.fiuba.algo3.modelo.ListaOpcionesParaPregunta;
 import edu.fiuba.algo3.modelo.Opcion;
 import edu.fiuba.algo3.modelo.Pregunta;
 import edu.fiuba.algo3.modelo.PreguntaVerdaderoFalso;
@@ -24,8 +24,8 @@ public class PreguntaTipoVerdaderoFalsoTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
 
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
@@ -46,8 +46,8 @@ public class PreguntaTipoVerdaderoFalsoTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
 
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
@@ -68,8 +68,8 @@ public class PreguntaTipoVerdaderoFalsoTest {
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpciones);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
 

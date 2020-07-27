@@ -2,11 +2,11 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
-public class ListaOpciones {
+public class ListaOpcionesParaPregunta {
     ArrayList<Opcion> opcionesApresentar;
     ArrayList<Opcion> opcionesCorrectas;
 
-    public ListaOpciones(ArrayList<Opcion> opcionesApresentar, ArrayList<Opcion> opcionesCorrectas) {
+    public ListaOpcionesParaPregunta(ArrayList<Opcion> opcionesApresentar, ArrayList<Opcion> opcionesCorrectas) {
         this.opcionesApresentar = opcionesApresentar;
         this.opcionesCorrectas = opcionesCorrectas;
     }

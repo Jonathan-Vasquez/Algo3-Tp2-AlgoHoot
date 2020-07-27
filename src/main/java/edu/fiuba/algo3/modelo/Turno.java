@@ -3,7 +3,7 @@ package edu.fiuba.algo3.modelo;
 import java.util.ArrayList;
 
 public class Turno {
-    Jugador unJugador;
+    private Jugador unJugador;
     private ArrayList<Opcion> opciones;
 
     public Turno(Jugador unJugador){

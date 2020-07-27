@@ -27,9 +27,9 @@ public class PreguntaMultipleChoicePuntajeParcialTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpcionesParaPregunta);
 
         //jugador elige 2 de 3 opciones correctas(no elige niguna incorrecta)
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
@@ -57,9 +57,9 @@ public class PreguntaMultipleChoicePuntajeParcialTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpcionesParaPregunta);
 
         //jugador elige 2 opciones correctas y una incorrecta)
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
@@ -89,9 +89,9 @@ public class PreguntaMultipleChoicePuntajeParcialTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoicePuntajeParcial(), listaOpcionesParaPregunta);
 
         //jugador no elige respuesta
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();

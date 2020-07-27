@@ -21,7 +21,7 @@ public class Entrega01Test {
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaVerdaderoFalsoPenalizable = new PreguntaVerdaderoFalsoPenalizable();
         Pregunta unaPregunta = new Pregunta("se debe hacer test?", tipoPreguntaVerdaderoFalsoPenalizable, listaDeOpciones);
@@ -40,7 +40,7 @@ public class Entrega01Test {
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaVerdaderoFalsoPenalizable = new PreguntaVerdaderoFalsoPenalizable();
         Pregunta unaPregunta = new Pregunta("se debe testear?", tipoPreguntaVerdaderoFalsoPenalizable, listaDeOpciones);
@@ -73,7 +73,7 @@ public class Entrega01Test {
         opcionesCorrectas.add(opcionCorrecta2);
         opcionesCorrectas.add(opcionCorrecta3);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaMultipleChoice = new PreguntaMultipleChoice();
         Pregunta unaPregunta = new Pregunta("Cuales son paises de Sud America?",tipoPreguntaMultipleChoice, listaDeOpciones );
@@ -101,7 +101,7 @@ public class Entrega01Test {
         opcionesCorrectas.add(opcionCorrecta2);
         opcionesCorrectas.add(opcionCorrecta3);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoDePreguntaMultipleChoiceClasico = new PreguntaMultipleChoice();
         Pregunta unaPregunta = new Pregunta("Cuales son paises de Sud America?", tipoDePreguntaMultipleChoiceClasico, listaDeOpciones);
@@ -139,7 +139,7 @@ public class Entrega01Test {
         opcionesCorrectas.add(opcionCorrecta2);
         opcionesCorrectas.add(opcionCorrecta3);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoPreguntaMultipleChoicePuntajeParcial = new PreguntaMultipleChoicePuntajeParcial();
         Pregunta unaPregunta = new Pregunta("Cuales son paises de Sud America?", tipoPreguntaMultipleChoicePuntajeParcial, listaDeOpciones);
@@ -166,7 +166,7 @@ public class Entrega01Test {
         opcionesCorrectas.add(opcionCorrecta2);
         opcionesCorrectas.add(opcionCorrecta3);
 
-        ListaOpciones listaDeOpciones = new ListaOpciones(opcionesAMostrar, opcionesCorrectas);
+        ListaOpcionesParaPregunta listaDeOpciones = new ListaOpcionesParaPregunta(opcionesAMostrar, opcionesCorrectas);
 
         TipoPregunta tipoDePreguntaMultipleChoiceDePuntajeParcial = new PreguntaMultipleChoicePuntajeParcial();
         Pregunta unaPregunta = new Pregunta("Cuales son paises de Sud America?", tipoDePreguntaMultipleChoiceDePuntajeParcial, listaDeOpciones);

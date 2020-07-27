@@ -7,7 +7,7 @@ public class Opcion {
         this.descripcion = descripcion;
     }
 
-    public String getTexto(){
+    public String getDescripcion(){
         return this.descripcion;
     }
 }

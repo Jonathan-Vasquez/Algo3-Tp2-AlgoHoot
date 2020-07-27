@@ -30,9 +30,9 @@ public class PreguntaTest {
         opcionesCorrectas.add(opcionCorrectaDos);
         opcionesCorrectas.add(opcionCorrectaTres);
 
-        ListaOpciones listaOpciones = new ListaOpciones(opcionesApresentar,opcionesCorrectas);
+        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
 
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpciones);
+        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaMultipleChoice(), listaOpcionesParaPregunta);
 
         assertEquals("¿Es bueno Hacer Tests?", unaPregunta.getConsigna());
 
