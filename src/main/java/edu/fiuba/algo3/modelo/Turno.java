@@ -10,11 +10,11 @@ public class Turno {
         this.unJugador = unJugador;
         this.opciones= new ArrayList<>();
     }
-    public void agregarOpcionJugador(Opcion unaOpcion){
-        this.opciones.add(unaOpcion);
-    }
     public ArrayList<Opcion> getOpcionesJugador(){
         return opciones;
+    }
+    public void agregarOpcionJugador(Opcion unaOpcion){
+        this.opciones.add(unaOpcion);
     }
     public void asignarPuntajeJugador(int unPuntaje){
         unJugador.acumularPuntaje(unPuntaje);
