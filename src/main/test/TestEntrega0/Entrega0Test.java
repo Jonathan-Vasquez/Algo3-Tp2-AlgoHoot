@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class Entrega0Test {
     @Test
     public void test01PreguntaDeVerdaderoFalsoClasicoPuedeCrearseIndicandoleCualEsLaRespuestaCorrecta(){
+        //Arrange
         Opcion opcionCorrecta = new Opcion("si");
         Opcion opcionIncorrecta = new Opcion("no");
 
@@ -27,10 +28,14 @@ public class Entrega0Test {
         TipoPregunta tipoPreguntaVerdaderoFalso = new PreguntaVerdaderoFalso();
         Pregunta unaPregunta = new Pregunta("se debe hacer test?",tipoPreguntaVerdaderoFalso, listaDeOpciones );
 
-        assertTrue(unaPregunta.getOpcionesCorrectas().contains(opcionCorrecta));
+        //Act
+        boolean contieneRespuestaCorrecta = unaPregunta.getOpcionesCorrectas().contains(opcionCorrecta);
+        //Assert
+        assertTrue(contieneRespuestaCorrecta);
     }
     @Test
     public void test02PreguntaDeVerdaderoFalsoClasicoRecibeLasOpcionesElegidasPorLosJugadoresEntoncesAsignaBienSusPuntos(){
+        //Arrange
         Opcion opcionCorrecta = new Opcion("si");
         Opcion opcionIncorrecta = new Opcion("no");
 
@@ -53,7 +58,11 @@ public class Entrega0Test {
         ArrayList<Opcion> opcionesElegidasJugador2 = new ArrayList<>();
         opcionesElegidasJugador2.add(opcionIncorrecta);
 
-        assertEquals(1, unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesElegidasJugador1));
-        assertEquals(0, unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesElegidasJugador2));
+        //Act
+        int puntajeParaJugador1 = unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesElegidasJugador1);
+        int puntajeParaJugador2 = unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesElegidasJugador2);
+        //Assert
+        assertEquals(1, puntajeParaJugador1);
+        assertEquals(0, puntajeParaJugador2);
     }
 }
