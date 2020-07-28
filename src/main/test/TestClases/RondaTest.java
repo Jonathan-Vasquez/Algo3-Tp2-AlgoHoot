@@ -40,12 +40,12 @@ public class RondaTest {
         rondaUno.agregarTurno(turnoJugadorDos);
         rondaUno.asignarPuntajeJugadores();
 
-        int puntajeFinalJugadorUno = jugadorUno.getPuntaje();
-        int puntajeFinalJugadorDos = jugadorDos.getPuntaje();
+        int puntajeAsignadoJugadorUno = jugadorUno.getPuntaje() - puntajeInicialJugadorUno;
+        int puntajeAsignadoJugadorDos = jugadorDos.getPuntaje() - puntajeInicialJugadorDos;
 
         //Assert
-        assertEquals(1,puntajeFinalJugadorUno-puntajeInicialJugadorUno);
-        assertEquals(0,puntajeFinalJugadorDos-puntajeInicialJugadorDos);
+        assertEquals(1,puntajeAsignadoJugadorUno);
+        assertEquals(0,puntajeAsignadoJugadorDos);
 
     }
     @Test
@@ -80,12 +80,14 @@ public class RondaTest {
         rondaUno.agregarTurno(turnoJugadorDos);
         rondaUno.asignarPuntajeJugadores();
 
-        int puntajeFinalJugadorUno = jugadorUno.getPuntaje();
-        int puntajeFinalJugadorDos = jugadorDos.getPuntaje();
+        int puntajeAsignadoJugadorUno = jugadorUno.getPuntaje() - puntajeInicialJugadorUno;
+        int puntajeAsignadoJugadorDos = jugadorDos.getPuntaje() - puntajeInicialJugadorDos;
 
         //Assert
-        assertEquals(1,puntajeFinalJugadorUno-puntajeInicialJugadorUno);
-        assertEquals(-1,puntajeFinalJugadorDos-puntajeInicialJugadorDos);
-
+        assertEquals(1,puntajeAsignadoJugadorUno);
+        assertEquals(-1,puntajeAsignadoJugadorDos);
     }
+
+
+
 }
