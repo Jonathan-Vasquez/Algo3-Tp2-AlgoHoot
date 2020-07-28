@@ -13,7 +13,7 @@ public class Turno {
     public ArrayList<Opcion> getOpcionesJugador(){
         return opciones;
     }
-    public void agregarOpcionJugador(Opcion unaOpcion){
+    public void agregarOpcionElejida(Opcion unaOpcion){
         this.opciones.add(unaOpcion);
     }
     public void asignarPuntajeJugador(int unPuntaje){

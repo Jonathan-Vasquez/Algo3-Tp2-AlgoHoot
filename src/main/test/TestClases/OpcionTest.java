@@ -11,7 +11,7 @@ public class OpcionTest {
 
         Opcion unaOpcion = new Opcion("IlCapitaniJackSpaguetti navega las aguas de Italia");
 
-        assertEquals("IlCapitaniJackSpaguetti navega las aguas de Italia",unaOpcion.getTexto());
+        assertEquals("IlCapitaniJackSpaguetti navega las aguas de Italia",unaOpcion.getDescripcion());
 
     }
 
