@@ -1,9 +1,6 @@
 package TestClases;
 
-import edu.fiuba.algo3.modelo.ListaOpcionesParaPregunta;
-import edu.fiuba.algo3.modelo.Opcion;
-import edu.fiuba.algo3.modelo.Pregunta;
-import edu.fiuba.algo3.modelo.PreguntaVerdaderoFalso;
+import edu.fiuba.algo3.modelo.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -14,67 +11,40 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PreguntaTipoVerdaderoFalsoTest {
     @Test
     public void test01SeLeEnviaUnaOpcionCorrectaYDevuelveUnPunto(){
-        Opcion opcionIncorrecta = new Opcion("Nop");
+        //Arrange
         Opcion opcionCorrecta = new Opcion("Seeee");
-
-        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
-        opcionesApresentar.add(opcionCorrecta);
-        opcionesApresentar.add(opcionIncorrecta);
 
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
-
-        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
-
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionCorrecta);
 
-        assertEquals(1,unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesDeUnJugador));
+        TipoPregunta verdaderoFalso = new PreguntaVerdaderoFalso();
+        //Act
+        int resultado = verdaderoFalso.calcularPuntaje(opcionesDeUnJugador,opcionesCorrectas);
+
+        //Assert
+        assertEquals(1,resultado);
     }
 
     @Test
     public void test02SeLeEnviaUnaOpcionIncorrectaYDevuelveCeroPuntos(){
+        //Arrange
         Opcion opcionIncorrecta = new Opcion("Nop");
         Opcion opcionCorrecta = new Opcion("Seeee");
 
-        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
-        opcionesApresentar.add(opcionCorrecta);
-        opcionesApresentar.add(opcionIncorrecta);
-
         ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrecta);
-
-        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
-
 
         ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
         opcionesDeUnJugador.add(opcionIncorrecta);
 
-        assertEquals(0,unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesDeUnJugador));
+        TipoPregunta verdaderoFalso = new PreguntaVerdaderoFalso();
+        //Act
+        int resultado = verdaderoFalso.calcularPuntaje(opcionesDeUnJugador,opcionesCorrectas);
+
+        //Assert
+        assertEquals(0,resultado);
     }
-    @Test
-    public void test03jugadorNoEligeOpciones() {
-
-        Opcion opcionIncorrecta = new Opcion("Nop");
-        Opcion opcionCorrecta = new Opcion("Seeee");
-
-        ArrayList<Opcion> opcionesApresentar = new ArrayList<>();
-        opcionesApresentar.add(opcionCorrecta);
-        opcionesApresentar.add(opcionIncorrecta);
-
-        ArrayList <Opcion> opcionesCorrectas = new ArrayList<>();
-        opcionesCorrectas.add(opcionCorrecta);
-
-        ListaOpcionesParaPregunta listaOpcionesParaPregunta = new ListaOpcionesParaPregunta(opcionesApresentar,opcionesCorrectas);
-        Pregunta unaPregunta = new Pregunta("¿Es bueno Hacer Tests?",new PreguntaVerdaderoFalso(), listaOpcionesParaPregunta);
-
-        ArrayList<Opcion> opcionesDeUnJugador = new ArrayList<>();
-
-        assertEquals(0,unaPregunta.obtenerPuntajeOpcionesElejidas(opcionesDeUnJugador));
-
-    }
-
 }
