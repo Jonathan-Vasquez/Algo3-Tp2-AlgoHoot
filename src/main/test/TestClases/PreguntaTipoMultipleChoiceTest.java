@@ -38,7 +38,6 @@ public class PreguntaTipoMultipleChoiceTest {
         Opcion opcionCorrectaUno = new Opcion("Seeee");
         Opcion opcionCorrectaDos = new Opcion("Clarin");
         Opcion opcionCorrectaTres = new Opcion("Por su pollo");
-        Opcion opcionIncorrecta = new Opcion("Nop");
 
         ArrayList<Opcion> opcionesCorrectas = new ArrayList<>();
         opcionesCorrectas.add(opcionCorrectaUno);
@@ -54,12 +53,11 @@ public class PreguntaTipoMultipleChoiceTest {
         int resultado = multipleChoice.calcularPuntaje(opcionesDeUnJugador,opcionesCorrectas);
         //Assert
         assertEquals(0,resultado);
-
-
     }
 
     @Test
     public void test03SeLeEnviaTodasLasCorrectasYUnaIncorrectaYDevuelveCeroPuntos(){
+        //Arrange
         Opcion opcionCorrectaUno = new Opcion("Seeee");
         Opcion opcionCorrectaDos = new Opcion("Clarin");
         Opcion opcionCorrectaTres = new Opcion("Por su pollo");
